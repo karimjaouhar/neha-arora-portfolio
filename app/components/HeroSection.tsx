@@ -6,7 +6,7 @@ import Header from "./Header";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-full h-[40vh] md:h-[75vh]">
+    <section className="relative w-full h-[32vh] md:h-[58vh]">
       {/* Hero Image */}
       <Image
         src="/images/hero/hero-banner.jpg"

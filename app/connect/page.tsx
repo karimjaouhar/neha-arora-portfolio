@@ -3,7 +3,8 @@
 import React from "react";
 import SecondHero from "../components/SecondHero";
 import Link from "next/link";
-import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaTiktok, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 
 const ConnectPage: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const ConnectPage: React.FC = () => {
       <main className="py-18 h-[52vh]">
         <div className="max-w-4xl mx-auto text-center font-light text-lg md:text-xl space-y-4">
           <p className="font-medium">NEHA ARORA</p>
-          <p>Production Designer, Editor, and Director</p>
+          <p>Production Designer and Editor</p>
           <p>
             <a
               href="tel:+14164143800"
@@ -32,15 +33,25 @@ const ConnectPage: React.FC = () => {
               nehaaro@yahoo.com
             </a>
           </p>
-          <p>Oakville, ON Canada</p>
+          <p>Based in Toronto, CA</p>
+          <p>
+            <a
+              href="/resume.pdf"
+              download
+              className="inline-flex items-center justify-center gap-2 hover:underline"
+            >
+              <FiDownload aria-hidden="true" />
+              <span>Neha&apos;s Resume</span>
+            </a>
+          </p>
           <div className="mt-8 flex justify-center space-x-4">
           <Link
-              href="https://www.instagram.com/neha.ar1356/"
+              href="https://www.tiktok.com/@nehasedits"
               target="_blank"
-              aria-label="Instagram"
+              aria-label="TikTok"
               className="text-lg"
             >
-              <FaInstagram />
+              <FaTiktok />
             </Link>
             <Link
               href="https://www.youtube.com/@nehasedits"

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { FaTiktok, FaYoutube, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer: React.FC = () => {
@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
       <div className="text-sm md:text-md">© Copyright {currentYear}</div>
       <div className="flex justify-center space-x-4">
         <Link
-          href="https://www.instagram.com/neha.ar1356/"
+          href="https://www.tiktok.com/@nehasedits"
           target="_blank"
-          aria-label="Instagram"
+          aria-label="TikTok"
           className="text-md md:text-lg"
         >
-          <FaInstagram />
+          <FaTiktok />
         </Link>
         <Link
           href="https://www.youtube.com/@nehasedits"

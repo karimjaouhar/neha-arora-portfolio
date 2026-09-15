@@ -3,76 +3,26 @@
 import React from "react";
 import Image from "next/image";
 
-const topMovies = [
-  {
-    id: 1,
-    src: "/images/top-movies/top-1.jpg",
-    alt: "#1 favorite movie",
-    title: "Get Out",
-  },
-  {
-    id: 2,
-    src: "/images/top-movies/top-2.jpg",
-    alt: "#2 favorite movie",
-    title: "Coraline",
-  },
-  {
-    id: 3,
-    src: "/images/top-movies/top-3.jpg",
-    alt: "#3 favorite movie",
-    title: "Barbie",
-  },
-  {
-    id: 4,
-    src: "/images/top-movies/top-4-1.jpg",
-    alt: "#4 favorite movie",
-    title: "Anora",
-  },
-  {
-    id: 5,
-    src: "/images/top-movies/top-5.jpg",
-    alt: "#5 favorite movie",
-    title: "The Substance",
-  },
-];
-
 const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-12 px-4 md:px-8">
       {/* Use flex-col-reverse on mobile so the image appears above the text,
           and switch to flex-row on md+ */}
-      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-16 lg:gap-24">
         {/* About Text */}
-        <div className="md:w-1/2">
+        <div className="w-full md:w-1/2 lg:max-w-2xl">
           <h2 className="text-xl font-medium mb-4">ABOUT</h2>
           <p className="font-light">
-          Neha Arora is a third-year Film and Television student at Sheridan College with a passion for production design and directing.<br /><br />
-          What began as a hobby editing videos turned into a love for filmmaking, and during her time at Sheridan, she found her voice in production design—creating visually striking sets across a range of student films.<br /><br />
-          Neha has also explored cinematography, editing, and directing. In 2024, she directed her first short film <em>The Beauty of Letting Go</em> with a group of close collaborators.
+          I’m a filmmaker and production designer passionate about creating visually compelling worlds through production design, directing, editing, and storytelling.<br /><br />
+          What started as a hobby of editing videos grew into a love for filmmaking. At Sheridan College, I discovered my creative voice through production design, where I found a passion for transforming spaces and building detailed environments that bring stories to life.<br /><br />
+          I’ve also explored directing, cinematography, and editing, including directing my first short film, <em>The Beauty of Letting Go</em>, in 2024. I’m drawn to projects that combine creativity, hands-on work, and visual storytelling, and I’m always looking for new opportunities to create and collaborate.
           </p>
-          {/* Top 5 Movies Section */}
-          <div className="mt-8">
-            <h3 className="text-md mb-4">MY FAVOURITE MOVIES</h3>
-            <div className="flex space-x-4 overflow-x-auto md:overflow-visible">
-              {topMovies.map((movie) => (
-                <div key={movie.id} className="flex-shrink-0">
-                  <Image
-                    src={movie.src}
-                    width={90}
-                    height={120}
-                    alt={movie.alt}
-                  />
-                  <p className="text-sm mt-2">{movie.title}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* About Image */}
-        <div className="md:w-1/2 my-10 md:mt-0 md:ml-8">
+        <div className="w-full md:w-1/2 my-10 md:my-0">
           {/* Constrain image width on mobile and center it */}
-          <div className="w-3/4 md:w-full mx-auto md:flex justify-end">
+          <div className="w-3/4 md:w-full max-w-[450px] mx-auto">
             <Image
               src="/images/about/me.jpg"
               alt="Neha Arora"

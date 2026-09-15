@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <header className="flex justify-between items-center px-6 md:px-12 py-6">
       <div>
         <h1 className="font-light text-3xl md:text-4xl"><Link href={"/"}>NEHA ARORA</Link></h1>
-        <p className="font-light text-sm md:text-md">DIRECTOR/ PRODUCTION DESIGNER</p>
+        <p className="font-light text-sm md:text-md">PRODUCTION DESIGNER/ EDITOR</p>
       </div>
       <NavigationMenu />
     </header>
